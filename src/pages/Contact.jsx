@@ -44,7 +44,7 @@ const Contact = () => {
                   <FaWhatsapp className="text-green-500 text-xl mt-1" />
                   <div>
                     <p className="font-semibold">WhatsApp</p>
-                    <p className="text-gray-600">+91 {process.env.REACT_APP_WHATSAPP_NUMBER?.slice(2)}</p>
+                    <p className="text-gray-600">+91 {process.env.REACT_APP_WHATSAPP_NUMBER}</p>
                     <p className="text-sm text-gray-500">Response within 2 hours</p>
                   </div>
                 </div>
@@ -60,7 +60,7 @@ const Contact = () => {
                   <FaPhone className="text-blue-500 text-xl mt-1" />
                   <div>
                     <p className="font-semibold">Phone</p>
-                    <p className="text-gray-600">+91 {process.env.REACT_APP_WHATSAPP_NUMBER?.slice(2)}</p>
+                    <p className="text-gray-600">+91 {process.env.REACT_APP_WHATSAPP_NUMBER}</p>
                     <p className="text-sm text-gray-500">Mon-Sat, 10 AM - 7 PM</p>
                   </div>
                 </div>
@@ -94,12 +94,6 @@ const Contact = () => {
               <div className="flex gap-4">
                 <a href={INSTAGRAM_URL} className="w-12 h-12 bg-pink-500 text-white rounded-full flex items-center justify-center hover:scale-110 transition-transform">
                   <FaInstagram size={24} />
-                </a>
-                <a href="#" className="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center hover:scale-110 transition-transform">
-                  <FaFacebook size={24} />
-                </a>
-                <a href="#" className="w-12 h-12 bg-blue-400 text-white rounded-full flex items-center justify-center hover:scale-110 transition-transform">
-                  <FaTwitter size={24} />
                 </a>
                 <a href={`https://wa.me/${process.env.REACT_APP_WHATSAPP_NUMBER}`} className="w-12 h-12 bg-green-500 text-white rounded-full flex items-center justify-center hover:scale-110 transition-transform">
                   <FaWhatsapp size={24} />

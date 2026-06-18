@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FaWhatsapp, FaInstagram, FaEnvelope, FaHeart, FaFacebook, FaTwitter } from 'react-icons/fa';
+import { FaWhatsapp, FaInstagram, FaEnvelope, FaHeart, } from 'react-icons/fa';
 import { EMAIL, INSTAGRAM_URL } from '../../utils/constants';
 import { generalInquiry } from '../../utils/whatsappHelper';
 
