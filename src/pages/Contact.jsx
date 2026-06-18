@@ -197,7 +197,7 @@ const Contact = () => {
         {/* Map Section */}
         <div className="mt-12 bg-white rounded-lg shadow-md overflow-hidden">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387190.2799151237!2d74.30882791112191!3d18.562424398755178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2e4f8d7e0f5b9%3A0x4f8a5c9e2d6f8e7d!2sIndia!5e0!3m2!1sen!2sin!4v1644567890123!5m2!1sen!2sin"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31324.286676925614!2d76.93256885968241!3d11.01684448387078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba859af2f971cb5%3A0x2fc1c81e183ed282!2sCoimbatore%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
             width="100%"
             height="300"
             style={{ border: 0 }}
