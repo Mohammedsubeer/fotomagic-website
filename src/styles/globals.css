@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply font-poppins text-dark bg-gray-50;
+    overflow-x: hidden;
+  }
+  
+  * {
+    @apply box-border;
+  }
+}
+
+@layer components {
+  .container-custom {
+    @apply container mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  
+  .btn-primary {
+    @apply bg-primary text-white px-6 py-3 rounded-full font-semibold hover:bg-opacity-90 transition-all duration-300 transform hover:scale-105;
+  }
+  
+  .btn-secondary {
+    @apply bg-green-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-green-600 transition-all duration-300 flex items-center gap-2 justify-center;
+  }
+  
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold text-center mb-12 text-dark;
+  }
+  
+  .card {
+    @apply bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300;
+  }
+}
+
+@layer utilities {
+  .animate-fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 640px) {
+  .section-title {
+    @apply text-2xl mb-8;
+  }
+  
+  .btn-primary, .btn-secondary {
+    @apply px-4 py-2 text-sm;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-200;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-primary rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-opacity-80;
+}
